@@ -17,4 +17,23 @@
         android:textSize="30sp"
         android:gravity="center"/>
 
+    <TextView
+        android:paddingLeft="10dp"
+        android:id="@+id/team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생명과 나눔 비글즈"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:layout_toStartOf="@id/team_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        app:srcCompat="@drawable/gachon" />
+
 </RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "131908619980",
+    "firebase_url": "https://noracismcampagin.firebaseio.com",
+    "project_id": "noracismcampagin",
+    "storage_bucket": "noracismcampagin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131908619980:android:fa22b42680fb49f0",
+        "android_client_info": {
+          "package_name": "kr.ac.gachon.www"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131908619980-fqhqludg3kpb1se3r96vffisoiggj3b2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.ac.gachon.www",
+            "certificate_hash": "9749e12d75f4861b5bb339adf037c21ae9c06045"
+          }
+        },
+        {
+          "client_id": "131908619980-tiujvh7p1lh418kdnhd2q6tlc9h4h7vn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkhrepeDlmn3EX7Si52xv1wjK8A6oJZNM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131908619980-tiujvh7p1lh418kdnhd2q6tlc9h4h7vn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

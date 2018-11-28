@@ -16,6 +16,7 @@ public class Web extends AppCompatActivity {
         super.onCreate(si);
         setContentView(R.layout.activity_web);
 
+        //Main에서 제목과 주소 받아오기
         Intent intent=getIntent();
         String url=intent.getStringExtra("url");
         String title=intent.getStringExtra("title");
@@ -23,7 +24,7 @@ public class Web extends AppCompatActivity {
         //제목 설정
         TextView title_t=(TextView)findViewById(R.id.title);
         title_t.setText(title);
-
+        //웹뷰 설정
         webView=(WebView)findViewById(R.id.web);
         webView.setWebViewClient(new WebViewClient());
         WebSettings settings=webView.getSettings();

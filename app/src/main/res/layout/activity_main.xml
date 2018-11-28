@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -17,6 +22,15 @@
             android:text="인종차별 금지 캠페인"
             android:textSize="25sp"
             android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/preference"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/preferences"
+            android:onClick="open_drawer"/>
     </RelativeLayout>
 
     <ScrollView
@@ -40,66 +54,18 @@
                 android:padding="5dp"
                 android:gravity="center_horizontal"/>
 
-            <Button
-                android:id="@+id/what_is_race"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/button_background"
-                android:text="인종이란 무엇을 의미하나요?"
-                android:textSize="16sp" />
-
-            <Button
-                android:id="@+id/foriegn"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/button_background"
-                android:text="우리나라에 외국인이 얼마나 살고 있을까?"
-                android:textSize="16sp" />
-
-            <Button
-                android:id="@+id/what_is_racism"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/button_background"
-                android:text="인종차별은 무엇인가요?"
-                android:textSize="16sp" />
-
-            <Button
-                android:id="@+id/history"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/button_background"
-                android:text="한국 인종차별의 역사에 대해서"
-                android:textSize="16sp" />
-
-            <Button
-                android:id="@+id/why"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/button_background"
-                android:text="인종차별은 왜 일어날까?"
-                android:textSize="16sp" />
-
-            <Button
-                android:id="@+id/how"
+            <!--교육자료 레이아웃-->
+            <LinearLayout
+                android:id="@+id/explains"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/button_background"
-                android:text="어떻게 하면 인종차별을 없앨 수 있을까?"
-                android:textSize="16sp" />
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp">
 
+
+            </LinearLayout>
+
+            <!--링크 레이아웃-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -112,26 +78,36 @@
                 android:padding="5dp"
                 android:gravity="center_horizontal"/>
 
-            <Button
-                android:id="@+id/racismout"
+            <LinearLayout
+                android:id="@+id/links"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/button_background"
-                android:text="인종차별 철폐의 날 행사"
-                android:textSize="16sp" />
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp">
 
-            <Button
-                android:id="@+id/cyber_lecture"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/button_background"
-                android:text="인권교육센터 사이버교육"
-                android:textSize="16sp" />
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
+    
+    <LinearLayout
+        android:clickable="true"
+        android:layout_gravity="start"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="만든 사람들"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/et_background"
+        android:onClick="creater"/>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
